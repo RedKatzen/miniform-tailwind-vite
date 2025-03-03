@@ -1,13 +1,13 @@
 @import "tailwindcss";
 
-@theme{
+@theme {
   --color-btn-primary: #f3f3f3;
 }
 
-html{
+html {
   font-size: 62.5%; /* 10px */
 }
 
-body{
+body {
   font-size: 1.6rem; /* 16px */
 }

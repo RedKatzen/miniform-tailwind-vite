@@ -8,45 +8,54 @@
   </head>
   <body>
 
-    <div class="border-l-[1px] border-r-[1px] h-screen w-4/5 flex items-center justify-center ml-auto mr-auto">
-      <div class="border-[1px] rounded-4xl min-h-[50%] w-5xl">
-        <form class="justify-start items-center m-30">
-          <div class="w-full mb-16">
-            <h1 class="text-4xl">
+    <div class="border-r-[1px] h-[100vh] w-3/5 flex items-center justify-center">
+      <div class="flex justify-center items-center border-[1px] rounded-4xl h-[600px] w-[550px]">
+        <form class="h-[30em] w-3/4">
+          <div class="w-full mb-12">
+            <h1 class="text-2xl font-bold pl-2">
               Validation form
             </h1>
           </div>
           <div class="w-full">
-            <div class="mb-14">
-              <label>Email</label>
+            <div class="w-full mb-5 p-2">
+              <label class="text-[12px]">Email</label>
               <div id="container-input-email" class="border-b-[1px]">
-                <input type="email" name="email" id="email" placeholder="eg. youremail@domain.com" class="w-full p-4 pl-[1px] outline-0" />
+                <input type="email" name="email" id="email" placeholder="eg. youremail@domain.com" class="w-full text-[12px] p-2 pl-[1px] outline-0" />
               </div>
               <div class="h-3">
-                <p class="error-message text-[15px] pt-2 text-red-500 hidden">This is not a email</p>
+                <p class="error-message text-[12px] pt-2 text-red-500 hidden">This is not a email</p>
               </div>    
             </div>
-            <div class="mb-14">
-              <label>Telephone number</label>
+            <div class="w-full mb-5 p-2">
+              <label class="text-[12px]">Telephone number</label>
               <div class="border-b-[1px]">
-                <input type="number" name="teleNu" id="teleNu" placeholder="eg. (**) ****-****" class="w-full p-4 pl-[1px] outline-0" />
+                <input type="number" name="telefone" id="telefone" placeholder="eg. (**) ****-****" class="w-full text-[12px] p-2 pl-[1px] outline-0" />
+              </div>
+              <div class="h-3">
+                <p class="error-message text-[12px] pt-2 text-red-500 hidden">This is not a email</p>
               </div>    
             </div>
-            <div class="mb-14">
-              <label>Password</label>
+            <div class="w-full mb-5 p-2">
+              <label class="text-[12px]">Password</label>
               <div class="border-b-[1px]">
-                <input type="password" name="password" id="password" class="w-full p-4 pl-[1px] outline-0" />
+                <input type="password" name="password" id="password" class="w-full text-[12px] p-2 pl-[1px] outline-0" />
+              </div>
+              <div class="h-3">
+                <p class="error-message text-[12px] pt-2 text-red-500 hidden">This is not a email</p>
               </div>    
             </div>
-            <div class="mb-20">
-              <label>Confirm password</label>
+            <div class="w-full mb-5 p-2">
+              <label class="text-[12px]">Confirm password</label>
               <div class="border-b-[1px]">
-                <input type="password" name="confirm" id="confirm" class="w-full p-4 pl-[1px] outline-0" />
+                <input type="password" name="confirm" id="confirm" class="w-full text-[12px] p-2 pl-[1px] outline-0" />
+              </div>
+              <div class="h-3">
+                <p class="error-message text-[12px] pt-2 text-red-500 hidden">This is not a email</p>
               </div>    
             </div>
-            <div class="w-full">
-              <div class="w-80 rounded-4xl flex justify-center bg-btn-primary shadow-md">
-                <button type="submit" class="w-full p-5 h-full font-bold">Submit form</button>
+            <div class="mt-15">
+              <div class="w-70 rounded-4xl flex justify-center bg-btn-primary shadow-md">
+                <button type="submit" class="w-full h-full font-bold text-2xl pb-5 pt-5">Submit form</button>
               </div>
             </div>
           </div>
