@@ -10,7 +10,7 @@
 
     <div class="border-r-[1px] h-[100vh] w-3/5 flex items-center justify-center">
       <div class="flex justify-center items-center border-[1px] rounded-4xl h-[600px] w-[550px]">
-        <form class="h-[30em] w-3/4">
+        <form novalidate class="h-[30em] w-3/4">
           <div class="w-full mb-12">
             <h1 class="text-2xl font-bold pl-2">
               Validation form
@@ -23,7 +23,7 @@
                 <input type="email" name="email" id="email" placeholder="eg. youremail@domain.com" class="w-full text-[12px] p-2 pl-[1px] outline-0" />
               </div>
               <div class="h-3">
-                <p class="error-message text-[12px] pt-2 text-red-500 hidden">This is not a email</p>
+                <p id="errMsgEmail" class="text-[12px] pt-2 text-red-500 hidden"></p>
               </div>    
             </div>
             <div class="w-full mb-5 p-2">
@@ -32,7 +32,7 @@
                 <input type="tel" autocomplete="tel-extension" maxlength="16" name="phone" id="phone" placeholder="eg. (**) ****-****" class="w-full text-[12px] p-2 pl-[1px] outline-0" />
               </div>
               <div class="h-3">
-                <p class="error-message text-[12px] pt-2 text-red-500 hidden">This is not a email</p>
+                <p id="errMsgPhone" class="text-[12px] pt-2 text-red-500 hidden"></p>
               </div>    
             </div>
             <div class="w-full mb-5 p-2">
@@ -41,7 +41,7 @@
                 <input type="password" autocomplete="new-password" name="password" id="password" class="w-full text-[12px] p-2 pl-[1px] outline-0" />
               </div>
               <div class="h-3">
-                <p class="error-message text-[12px] pt-2 text-red-500 hidden">This is not a email</p>
+                <p id="errMsgPw" class="text-[12px] pt-2 text-red-500 hidden"></p>
               </div>    
             </div>
             <div class="w-full mb-5 p-2">
@@ -50,12 +50,12 @@
                 <input type="password" autocomplete="new-password" name="confirmPw" id="confirmPw" class="w-full text-[12px] p-2 pl-[1px] outline-0" />
               </div>
               <div class="h-3">
-                <p class="error-message text-[12px] pt-2 text-red-500 hidden">This is not a email</p>
+                <p id="errMsgConfirm" class="text-[12px] pt-2 text-red-500 hidden"></p>
               </div>    
             </div>
             <div class="mt-15">
-              <div class="w-70 rounded-4xl flex justify-center bg-btn-primary shadow-md">
-                <button type="submit" class="w-full h-full font-bold text-2xl pb-5 pt-5">Submit form</button>
+              <div class="w-full rounded-4xl flex justify-center bg-btn-primary shadow-md">
+                <button class="w-full h-full font-bold text-2xl pb-5 pt-5">Submit form</button>
               </div>
             </div>
           </div>
